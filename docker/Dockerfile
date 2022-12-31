@@ -9,6 +9,7 @@ RUN echo 'root:1234' | chpasswd
 RUN mkdir /root/git_install
 RUN cd /root/git_install
 RUN git clone https://github.com/rdavid000/MYKALI.git
+RUN sleep 5
 RUN chmod +x /root/git_install/MYKALI/firstboot.sh
 RUN /bin/bash /root/git_install/MYKALI/firstboot.sh
 CMD service ssh restart && /bin/bash /root/git_install/MYKALI/setup.sh ; /bin/bash
