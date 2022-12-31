@@ -4,6 +4,6 @@ apt-get update -yq
 apt-get install openssh-server git -yq
 apt-get clean -y
 service ssh restart
-cat /etc/ssh/sshd_config
 sed -i 's/#*X11Forwarding.*/X11Forwarding yes/' /etc/ssh/sshd_config
 sed -i 's/#*X11UseLocalhost.*/X11UseLocalhost no/' /etc/ssh/sshd_config
+exit 0
