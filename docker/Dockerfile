@@ -9,7 +9,6 @@ RUN echo 'root:1234' | chpasswd
 RUN mkdir -p /root/git_install
 RUN wget https://github.com/rdavid000/MYKALI/blob/main/startup/firstboot.sh -O /root/git_install/firstboot.sh
 RUN wget https://github.com/rdavid000/MYKALI/blob/main/startup/start.sh -O /root/git_install/start.sh
-RUN chmod +x /root/git_install/firstboot.sh
-RUN chmod +x /root/git_install/start.sh
+RUN chmod +x /root/git_install/firstboot.sh && chmod +x /root/git_install/start.sh
 RUN /bin/bash /root/git_install/firstboot.sh
-CMD service ssh restart && /bin/bash /root/git_install/start.sh ; /bin/bash
+CMD service ssh start && /bin/bash /root/git_install/start.sh ; /bin/bash
