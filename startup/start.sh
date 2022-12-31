@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "HELLO MYKALI\n"
+echo -e "HELLO MYKALI\n"
