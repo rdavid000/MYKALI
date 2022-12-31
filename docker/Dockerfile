@@ -8,7 +8,7 @@ RUN echo 'r2d2:1234' | chpasswd
 RUN echo 'root:1234' | chpasswd
 RUN mkdir /root/git_install
 RUN cd /root/git_install
-RUN wget https://github.com/rdavid000/MYKALI/blob/main/docker/Dockerfile
+RUN wget https://github.com/rdavid000/MYKALI/blob/main/firstboot.sh
 RUN wget https://github.com/rdavid000/MYKALI/blob/main/start.sh
 RUN chmod +x /root/git_install/MYKALI/firstboot.sh
 RUN chmod +x /root/git_install/MYKALI/start.sh
