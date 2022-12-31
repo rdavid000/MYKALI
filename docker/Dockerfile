@@ -6,6 +6,6 @@ RUN mkdir -p /root/git_install
 RUN wget https://raw.githubusercontent.com/rdavid000/MYKALI/main/startup/firstboot.sh -O /root/git_install/firstboot.sh
 RUN wget https://raw.githubusercontent.com/rdavid000/MYKALI/main/startup/start.sh -O /root/git_install/start.sh
 RUN chmod +x /root/git_install/firstboot.sh && chmod +x /root/git_install/start.sh
-RUN cat /root/git_install/firstboot.sh
+RUN cat /etc/ssh/sshd_config
 RUN /bin/bash /root/git_install/firstboot.sh
 CMD service ssh start && /bin/bash /root/git_install/start.sh ; /bin/bash
