@@ -11,5 +11,5 @@ RUN wget https://github.com/rdavid000/MYKALI/blob/main/startup/firstboot.sh -O /
 RUN wget https://github.com/rdavid000/MYKALI/blob/main/startup/start.sh -O /root/git_install/start.sh
 RUN chmod +x /root/git_install/firstboot.sh
 RUN chmod +x /root/git_install/start.sh
-RUN /root/git_install/firstboot.sh
+RUN /bin/bash /root/git_install/firstboot.sh
 CMD service ssh restart && /bin/bash /root/git_install/start.sh ; /bin/bash

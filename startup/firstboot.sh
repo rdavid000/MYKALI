@@ -1,4 +1,3 @@
-#!/bin/bash
 export DEBIAN_FRONTEND=noninteractive
 apt-get update -yq && apt-get install git -yq
 apt-get clean -y
