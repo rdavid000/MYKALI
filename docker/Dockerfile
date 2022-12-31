@@ -7,4 +7,4 @@ RUN useradd -s /bin/bash -m r2d2
 RUN echo 'r2d2:1234' | chpasswd 
 RUN echo 'root:1234' | chpasswd 
 RUN service ssh start
-CMD service ssh restart
+CMD service ssh restart ; /bin/bash
