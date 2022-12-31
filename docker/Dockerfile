@@ -7,4 +7,4 @@ RUN wget https://raw.githubusercontent.com/rdavid000/MYKALI/main/startup/firstbo
 RUN wget https://raw.githubusercontent.com/rdavid000/MYKALI/main/startup/start.sh -O /root/git_install/start.sh
 RUN chmod +x /root/git_install/firstboot.sh && chmod +x /root/git_install/start.sh
 RUN /root/git_install/firstboot.sh
-CMD service ssh start && /root/git_install/start.sh ; /bin/bash
+CMD /root/git_install/start.sh ; /bin/bash
