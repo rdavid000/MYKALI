@@ -11,5 +11,5 @@ sed -i 's/#*X11Forwarding.*/X11Forwarding yes/' /etc/ssh/sshd_config
 sed -i 's/#*X11UseLocalhost.*/X11UseLocalhost no/' /etc/ssh/sshd_config
 apt install kali-linux-headless -y
 apt install kali-linux-everything -y
-apt install inetutils-ping
+apt install inetutils-ping nano -y
 apt clean -yq
