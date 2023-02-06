@@ -1,6 +1,4 @@
 #!/bin/bash
-echo "toto"
-export DEBIAN_FRONTEND=noninteractive
 export DEBIAN_FRONTEND=noninteractive
 apt update -y
 apt upgrade -y
@@ -17,4 +15,13 @@ wget https://raw.githubusercontent.com/internetwache/GitTools/master/Dumper/gitd
 chmod +x /home/r2d2/hack/git/gitdumper.sh
 wget https://raw.githubusercontent.com/internetwache/GitTools/master/Extractor/extractor.sh -O /home/r2d2/hack/git/extractor.sh
 chmod +x /home/r2d2/hack/git/extractor.sh
-apt clean -yq
+mkdir /home/r2d2/hack/rce -p
+wget https://raw.githubusercontent.com/synacktiv/php_filter_chain_generator/main/php_filter_chain_generator.py -O /home/r2d2/hack/rce/php_filter_chain_generator.py
+chmod +x /home/r2d2/hack/git/php_filter_chain_generator.py
+mkdir /home/r2d2/hack/privesc -p
+wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh -O /home/r2d2/hack/privesc/LinEnum.sh
+chmod +x /home/r2d2/hack/privesc/LinEnum.sh
+wget https://raw.githubusercontent.com/The-Z-Labs/linux-exploit-suggester/master/linux-exploit-suggester.sh -O /home/r2d2/hack/privesc/linux-exploit-suggester.sh
+chmod +x /home/r2d2/hack/privesc/linux-exploit-suggester.sh
+wget https://raw.githubusercontent.com/Cerbersec/scripts/master/linux/linpeas.sh -O /home/r2d2/hack/privesc/linpeas.sh
+chmod +x /home/r2d2/hack/privesc/linpeas.sh
