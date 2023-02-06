@@ -1,6 +1,8 @@
 #!/bin/bash
 export DEBIAN_FRONTEND=noninteractive
+echo "toto"
 apt-get update -y
+echo "toto"
 apt-get install openssh-server sudo -y
 usermod -aG sudo r2d2
 newgrp sudo
