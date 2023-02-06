@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "toto"
 export DEBIAN_FRONTEND=noninteractive
 echo "toto"
 apt-get update -y
