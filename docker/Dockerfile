@@ -1,8 +1,8 @@
 FROM kalilinux/kali-rolling
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt update -y 
-RUN apt install wget -y
-RUN apt clean -y
+RUN apt update -yq
+RUN apt install wget -yq
+RUN apt clean -yq
 RUN useradd -s /bin/bash -m r2d2 && echo 'r2d2:1234' | chpasswd && echo 'root:1234' | chpasswd
 RUN mkdir -p /root/git_install
 RUN wget https://raw.githubusercontent.com/rdavid000/MYKALI/main/startup/firstboot.sh -O /root/git_install/firstboot.sh
