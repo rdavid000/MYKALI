@@ -31,3 +31,4 @@ wget https://github.com/wildkindcc/Exploitation/blob/4d28fb2a7e96d814c2b66dff713
 chmod +x /home/r2d2/hack/privesc/pspy32
 mkdir /home/r2d2/hack/revshell -p
 wget https://github.com/int0x33/nc.exe/blob/fa87aa42c460d34966efb998a1788efca6db11a7/nc64.exe -O /home/r2d2/hack/revshell/nc64.exe
+exit 0
